@@ -19,7 +19,7 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     //declaração de variáveis
-    char estado1, estado2;
+    char estado1[3], estado2[3];
     char codigo1[4], codigo2[4];
     char nome1[50], nome2[50];
     unsigned long int populacao1, populacao2;
@@ -33,7 +33,7 @@ int main() {
     
     //obtenção dos dados via teclado
     printf("Digite a sigla do primeiro Estado: \n");
-    scanf(" %c", &estado1);
+    scanf("%s", &estado1);
     printf("Digite o código do primeiro estado com 1 letra e 2 números: \n");
     scanf("%s", codigo1);
     printf("Digite o nome da primeira cidade: \n");
@@ -50,7 +50,7 @@ int main() {
     printf("\n"); //quebra de linha para melhor visualização
 
     printf("Digite a sigla do segundo Estado: \n");
-    scanf(" %c", &estado2);
+    scanf("%s", &estado2);
     printf("Digite o código do segundo estado com 1 letra e 2 números: \n");
     scanf("%s", codigo2);
     printf("Digite o nome da segunda cidade: \n");
